@@ -1,0 +1,9 @@
+body{
+background: linear-gradient(rgba(230, 132, 4, 0.827), rgb(231, 149, 7)); ; 
+}
+.slot1{
+    height: 100px;
+    width: 720px;
+    background-color: rgb(249, 16, 16);
+    border-radius: 20px;
+}
