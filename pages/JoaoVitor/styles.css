@@ -1,14 +1,17 @@
-body{
-
-}
-.campos-caracteristicas{
+.campos{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 3vh;
 }
-.campo-caracteristicas{
-    height: 100px;
-    width: 720px;
+.campo-dentro{  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.caracteristicas {
+    width: 40%;
     background-color: black;
     border-radius: 20px;
+    height: 100px;
 }
