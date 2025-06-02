@@ -1,0 +1,14 @@
+body{
+
+}
+.campos-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.campo-caracteristicas{
+    height: 100px;
+    width: 720px;
+    background-color: black;
+    border-radius: 20px;
+}
