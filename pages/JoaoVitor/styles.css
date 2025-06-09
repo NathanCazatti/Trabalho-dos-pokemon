@@ -1,17 +1,48 @@
-.campos{
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
+body{
+  background-color: brown;
 }
-.campo-dentro{  
+
+.titulo-caracteristicas,
+  .subtitulo-caracteristicas {
+    margin-bottom: 10px;
+  }
+
+  .campos {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Faz as características quebrarem para a próxima linha */
+    gap: 3vh; /* Espaçamento vertical e horizontal */
     justify-content: space-between;
-}
-.caracteristicas {
-    width: 40%;
+  }
+
+  .caracteristicas {
+    position: relative;
+    flex: 1 1 calc(50% - 3vh); /* 2 por linha, descontando o gap */
+    min-width: calc(50% - 3vh);
     background-color: black;
     border-radius: 20px;
-    height: 100px;
+    color: white;
+    text-align: center;
+    overflow: visible;
+    font-family: 'Segoe UI', sans-serif;
+  }
+.pokemon-nome {
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.pokemon-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.caracteristicas p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.3;
 }
