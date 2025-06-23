@@ -1,1 +1,13 @@
-/* pagina do artur */
+.pokemon-card {
+    background-color: #222;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+    padding: 20px;
+  }
+  
+  .pokemon-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+  }
+  
