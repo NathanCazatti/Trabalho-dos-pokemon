@@ -1,4 +1,20 @@
+<<<<<<< HEAD
 /* pagina do Nathan */
 body {
     background: linear-gradient(rgb(172, 0, 172), rgb(84, 0, 69));
 }
+=======
+.pokemon-card {
+    background-color: #222;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+    padding: 20px;
+  }
+  
+  .pokemon-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+  }
+  
+>>>>>>> 8383c9503af2a51f52f6cc6b6ffdfd6a2d899e8e
