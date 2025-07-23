@@ -1,0 +1,84 @@
+/* Fundo com insígnia de fogo atrás, suave e fixa */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  color: #bf360c;
+  position: relative;
+  min-height: 100vh;
+  background-color: #fff5f0;
+}
+
+/* Pseudo-elemento para colocar a insígnia de fogo com transparência */
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  background: url('https://i.imgur.com/xUdNRrZ.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* Lista sem estilo padrão, centralizada e responsiva */
+#pokemonList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Cartão do Pokémon - um abaixo do outro */
+.pokemon-card {
+  background: #ffccbc;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 15px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Imagem do Pokémon */
+.pokemon-card img {
+  width: 96px;
+  height: 96px;
+}
+
+/* Nome do Pokémon */
+.pokemon-name {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #bf360c;
+  font-size: 1.2rem;
+}
+
+/* Tipos do Pokémon */
+.pokemon-types {
+  font-size: 0.9rem;
+  color: #6d4c41;
+}
