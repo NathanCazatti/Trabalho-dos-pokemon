@@ -1,20 +1,71 @@
-<<<<<<< HEAD
-/* pagina do Nathan */
-body {
-    background: linear-gradient(rgb(172, 0, 172), rgb(84, 0, 69));
-}
-=======
-.pokemon-card {
-    background-color: #222;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+
+  .pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .pokemon-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid var(--ghost-purple);
   }
   
-  .pokemon-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+
+  .pokemon-image {
+    background-color: #5c033e;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    min-height: 120px;
   }
   
->>>>>>> 8383c9503af2a51f52f6cc6b6ffdfd6a2d899e8e
+  .pokemon-image img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .pokemon-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--ghost-dark);
+    text-transform: capitalize;
+  }
+  
+  .pokemon-details {
+    padding: 5px 0;
+  }
+  
+  .pokemon-details p {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  
+  .ghost-badge {
+    background-color: var(--ghost-light);
+    color: rgb(0, 0, 0);
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 480px) {
+    .pokemon-container {
+        grid-template-columns: 1fr;
+    }
+  }
