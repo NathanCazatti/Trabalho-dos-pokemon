@@ -1,3 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: rgb(88, 0, 94);
+  font-family: sans-serif;
+}
+
+.Titulo {
+  background-color: rgb(255, 181, 255);
+  width: 400px;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   .pokemon-container {
     display: grid;
@@ -7,7 +27,7 @@
   }
   
   .pokemon-card {
-    background-color: white;
+    background: linear-gradient(to bottom right, purple, rgb(236, 73, 236));
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -19,7 +39,7 @@
   
 
   .pokemon-image {
-    background-color: #5c033e;
+    background: linear-gradient(to bottom right, rgb(184, 2, 184), rgb(255, 121, 255));
     border-radius: 8px;
     display: flex;
     justify-content: center;
