@@ -1,82 +1,152 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial Pokémon</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #ffcb05;
-            color: #3d7d28;
-            padding: 20px;
-        }
-        .main-content {
-            padding: 50px 20px;
-        }
-        .image-container img {
-            width: 150px;
-            height: auto;
-        }
-        .links {
-            margin-top: 30px;
-        }
-        .links a {
-            text-decoration: none;
-            margin: 10px;
-            padding: 15px 30px;
-            background-color: #3d7d28;
-            color: white;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: background-color 0.3s ease;
-        }
-        .links a:hover {
-            background-color: #ffcb05;
-            color: #3d7d28;
-        }
-        footer {
-            background-color: #3d7d28;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Página Principal Pokémon - Tipos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d0000 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  header {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-shadow: 0 0 10px #ff4500;
+    letter-spacing: 5px;
+    user-select: none;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    max-width: 900px;
+    justify-content: center;
+  }
+
+  .btn-type {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 25px 45px;
+    min-width: 220px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 15px #000;
+    user-select: none;
+    border: 4px solid transparent;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn-type:hover {
+    filter: brightness(1.1);
+    transform: scale(1.07);
+  }
+
+  .btn-type span.icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 0 3px #000);
+  }
+
+  .fire {
+    background: linear-gradient(45deg, #ff4500, #a32900);
+    border-color: #ff6b33;
+    box-shadow: 0 0 20px #ff4500;
+  }
+  .fire:hover {
+    box-shadow: 0 0 35px #ff7f50;
+  }
+
+  .ghost {
+    background: linear-gradient(45deg, #5555aa, #1a1a4d);
+    border-color: #8888dd;
+    box-shadow: 0 0 20px #6666ff;
+  }
+  .ghost:hover {
+    box-shadow: 0 0 35px #9999ff;
+  }
+
+  .water {
+    background: linear-gradient(45deg, #0099ff, #004466);
+    border-color: #33ccff;
+    box-shadow: 0 0 20px #00bfff;
+  }
+  .water:hover {
+    box-shadow: 0 0 35px #66d9ff;
+  }
+
+  .grass {
+    background: linear-gradient(45deg, #4caf50, #1b5e20);
+    border-color: #81c784;
+    box-shadow: 0 0 20px #66bb6a;
+  }
+  .grass:hover {
+    box-shadow: 0 0 35px #a5d6a7;
+  }
+
+  footer {
+    margin-top: auto;
+    color: #ff9999;
+    font-size: 0.85rem;
+    padding: 20px 0 10px 0;
+    user-select: none;
+    text-align: center;
+  }
+
+  @media(max-width: 600px) {
+    .btn-type {
+      min-width: 100%;
+      justify-content: center;
+      font-size: 1.15rem;
+    }
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Mundo Pokémon!</h1>
-        <p>Escolha seu Pokémon favorito e comece a jornada!</p>
-    </header>
 
-    <section class="main-content">
-        <div class="image-container">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu">
-        </div>
-        
+<header>Bem Vindo ao mundo dos pokemons </header>
 
-        
+<div class="buttons-container">
+   <a href="pokemon_fogo.html" class="btn-type fire">
+    <span class="icon">🔥</span>
+    Pokémons de Fogo
+  </a>
 
-        <div id="conteudo" class="container">
-            <button class="btn btn-Iniciar Jornada" id="btnIniciar Jornada">Iniciar Jornada</button>
-            <button class="btn btn-Pokémon" id="btn-Pokémon">Pokémon</button>
-            <button class="btn btn-Pokémon" id="btn-Pokémon">Pokémon</button>
-            <button class="btn btn-Pokémon" id="btn-Pokémon">Pokémon</button>
-          </div>
+  <a href="pokemon_fantasma.html" class="btn-type ghost">
+    <span class="icon">👻</span>
+    Pokémons do Tipo Fantasma
+  </a>
 
-    </section>
+  <a href="pokemon_agua.html" class="btn-type water">
+    <span class="icon">💧</span>
+    Pokémons de Água
+  </a>
 
-    <footer>
-        <p></p>
-    </footer>
+  <a href="pokemon_planta.html" class="btn-type grass">
+    <span class="icon">🌿</span>
+    Pokémons de Planta
+  </a>
+</div>
+
+<footer>
+  
+</footer>
+
 </body>
 </html>
