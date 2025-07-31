@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       const ghostTypeResponse = await fetch('https://pokeapi.co/api/v2/type/8/');
       const ghostTypeData = await ghostTypeResponse.json();
       
-      const ghostPokemon = ghostTypeData.pokemon.slice(0, 24);
+      const ghostPokemon = ghostTypeData.pokemon.slice(0, 92);
       
-      loadingElement.textContent = `Carregando${ghostPokemon.length} pokemon `;
+      loadingElement.textContent = `Carregando ${ghostPokemon.length} pokemon `;
       
       const pokemonDetails = [];
       

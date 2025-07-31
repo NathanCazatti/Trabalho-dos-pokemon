@@ -10,13 +10,9 @@ body {
   background-color: rgb(255, 181, 255);
   width: 400px;
   padding: 10px;
-  border-radius: 5%;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 25px;
+  margin: auto;
+  text-align: center;
 }
 
   .pokemon-container {

@@ -1,57 +1,102 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e0f7e8; /* Cor de fundo verde suave */
-    color: #1bab22; /* Texto em verde escuro */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #2cc78e, #34b579); /* Degradê do verde claro para o verde escuro */
+  color: #662e2e;
   
-  /* Título das características */
-  .titulo-caracteristicas,
-  .subtitulo-caracteristicas {
-    margin-bottom: 10px;
-    text-align: center;
-  }
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.Tipo-Planta {
   
-  .titulo-caracteristicas img,
-  .subtitulo-caracteristicas img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Container das características */
-  .campos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3vh;
-    justify-content: space-between;
-    padding: 20px;
-    width: 80%; /* Limita o tamanho para não ir até as bordas da tela */
-  }
-  
-  /* Estilo para cada característica */
-  .caracteristicas {
-    flex: 1 1 calc(50% - 3vh); /* 2 por linha, descontando o gap */
-    min-width: calc(50% - 3vh);
-    background-color: #1bc023; /* Cor verde */
-    border-radius: 20px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Responsividade: mudando para uma coluna em telas menores */
-  @media (max-width: 768px) {
-    .caracteristicas {
-      flex: 1 1 100%; /* 1 por linha em dispositivos menores */
-      min-width: 100%;
-    }
-  }
+}
+
+/* Estilo do carregamento */
+#loading {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Container dos Pokémon */
+#pokemonContainer {
+  display: flex;
+  flex-direction: column; /* Alinha os cartões verticalmente */
+  align-items: center; /* Centraliza os cartões */
+  width: 100%;
+  max-width: 600px; /* Limita a largura do container */
+}
+
+/* Cartão do Pokémon */
+.pokemon-card {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px 0; /* Espaçamento entre os cartões */
+  width: 100%; /* Faz com que os cartões ocupem toda a largura do container */
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do Pokémon */
+.pokemon-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  height: 150px;
+}
+
+.pokemon-image img {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+/* Nome do Pokémon */
+.pokemon-name {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+/* Detalhes do Pokémon */
+.pokemon-details {
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* Badge de tipo */
+.plant-badge {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+/* Estilo para o texto */
+p {
+  margin: 5px 0;
+}
+
+span {
+  font-weight: bold;
+}
