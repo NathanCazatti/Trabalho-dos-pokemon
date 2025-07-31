@@ -1,4 +1,4 @@
-// Fetch and display first 20 Grass-type Pokémon names, pictures and characteristics
+// Fetch and display first Grass-type Pokémon names, pictures and characteristics
 async function fetchAndDisplayGrassTypePokemon() {
   const typeUrl = 'https://pokeapi.co/api/v2/type/grass';  // Alterado para tipo planta
 
@@ -10,7 +10,7 @@ async function fetchAndDisplayGrassTypePokemon() {
     const data = await response.json();
 
     // Take first 20 pokemons
-    const pokemonEntries = data.pokemon.slice(0, 20);
+    const pokemonEntries = data.pokemon.slice(0, 124);
 
     // Fetch each Pokemon's data to get sprites and stats
     const detailedPromises = pokemonEntries.map(async (entry) => {
@@ -54,7 +54,7 @@ async function fetchAndDisplayGrassTypePokemon() {
     }
 
     // Clear previous content and add title
-    container.innerHTML = '<h2 style="grid-column: 1 / -1; text-align: center;">20 Grass-type Pokémon</h2>';
+    container.innerHTML = '<h2 style="grid-column: 1 / -1; text-align: center;">Grass-type Pokémon</h2>';
 
     // Create cards for each Pokemon with image, name and stats
     detailedPokemonList.forEach(({ name, sprite, stats }) => {
@@ -126,3 +126,4 @@ async function fetchAndDisplayGrassTypePokemon() {
 
 // Call the function to fetch and display immediately
 fetchAndDisplayGrassTypePokemon();
+

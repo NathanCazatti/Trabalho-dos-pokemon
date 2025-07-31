@@ -5,98 +5,101 @@
   box-sizing: border-box;
 }
 
+/* Estilo do corpo */
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #2cc78e, #34b579); /* Degradê do verde claro para o verde escuro */
-  color: #662e2e;
+  background: linear-gradient(to bottom, #12e944, #89e080); /* Gradiente verde claro */
+  color: #333;
   
+
+}
+
+/* Estilo do título principal */
+h2 {
+  color: #237626; /* Verde forte */
+  text-align: center;
+  margin: 20px 0;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do contêiner de Pokémon */
+#grass-pokemon-list {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo do cartão de Pokémon */
+.card {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 16px;
+  border: 2px solid #4caf50; /* Borda verde */
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Tipo-Planta {
-  
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo do carregamento */
-#loading {
-  font-size: 1.5em;
-  margin-bottom: 20px;
+/* Estilo da imagem do Pokémon */
+.card img {
+  width: 120px; /* Aumentado para melhor visualização */
+  height: 120px; /* Aumentado para melhor visualização */
+  margin-bottom: 12px;
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 2px solid #4caf50; /* Borda verde */
+}
+
+/* Estilo do nome do Pokémon */
+.card span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2e7d32; /* Verde escuro */
+  margin: 8px 0;
+}
+
+/* Estilo da seção de stats */
+.card div.stats {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: center;
   color: #555;
 }
 
-/* Container dos Pokémon */
-#pokemonContainer {
-  display: flex;
-  flex-direction: column; /* Alinha os cartões verticalmente */
-  align-items: center; /* Centraliza os cartões */
-  width: 100%;
-  max-width: 600px; /* Limita a largura do container */
+.card div.stats div {
+  margin: 4px 0;
+  background-color: #c8e6c9; /* Fundo verde claro */
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Cartão do Pokémon */
-.pokemon-card {
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin: 10px 0; /* Espaçamento entre os cartões */
-  width: 100%; /* Faz com que os cartões ocupem toda a largura do container */
-  transition: transform 0.2s;
-}
-
-.pokemon-card:hover {
-  transform: scale(1.05);
-}
-
-/* Imagem do Pokémon */
-.pokemon-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e0e0e0;
-  height: 150px;
-}
-
-.pokemon-image img {
-  max-width: 100%;
-  max-height: 100%;
-  opacity: 0;
-  transition: opacity 0.7s;
-}
-
-/* Nome do Pokémon */
-.pokemon-name {
+/* Estilo de mensagens de erro */
+#error-message {
+  color: red;
   text-align: center;
-  font-size: 1.5em;
-  margin: 10px 0;
-  color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
-/* Detalhes do Pokémon */
-.pokemon-details {
-  padding: 10px;
-  font-size: 0.9em;
+/* Estilo do rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid #ccc;
 }
 
-/* Badge de tipo */
-.plant-badge {
-  display: inline-block;
-  background-color: #4caf50;
-  color: white;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-right: 5px;
-  font-size: 0.8em;
-}
 
-/* Estilo para o texto */
-p {
-  margin: 5px 0;
-}
-
-span {
-  font-weight: bold;
-}
