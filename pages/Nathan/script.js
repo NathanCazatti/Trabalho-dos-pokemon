@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('pokemonContainer');
   
   try {
-      const ghostTypeResponse = await fetch('https://pokeapi.co/api/v2/type/8/');
+      const ghostTypeResponse = await fetch('https://pokeapi.co/api/v2/type/2/');
       const ghostTypeData = await ghostTypeResponse.json();
       
       const ghostPokemon = ghostTypeData.pokemon.slice(0, 92);
