@@ -1,149 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pokémons de Fogo 🔥</title>
-  <style>
-    /* Reset básico */
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 10px;
-      background-color: #fff5f0;
-      color: #bf360c;
-      position: relative;
-      min-height: 100vh;
-    }
-
-    /* Insígnia de fogo como fundo */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      width: 250px;
-      height: 250px;
-      background: url('https://i.imgur.com/xUdNRrZ.png') no-repeat center center;
-      background-size: contain;
-      opacity: 0.1;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Lista com grid de 2 colunas */
-    #pokemon-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      max-width: 420px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Cada item da lista - cartão */
-    #pokemon-list li {
-      background: #ffccbc;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      padding: 15px;
-      display: flex;
-      gap: 15px;
-      align-items: center;
-      transition: transform 0.2s;
-    }
-
-    #pokemon-list li:hover {
-      transform: scale(1.05);
-      cursor: pointer;
-    }
-
-    #pokemon-list img {
-      width: 96px;
-      height: 96px;
-    }
-
-    .pokemon-details {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    .pokemon-details strong {
-      text-transform: capitalize;
-      font-size: 1.2rem;
-      color: #bf360c;
-    }
-
-    .pokemon-details span {
-      font-size: 0.9rem;
-      color: #6d4c41;
-    }
-
-    /* Responsivo: 1 coluna em celular */
-    @media (max-width: 480px) {
-      #pokemon-list {
-        grid-template-columns: 1fr;
-        max-width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Tipo Fogo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Pokémons do tipo Fogo 🔥</h1>
-  <ul id="pokemon-list"></ul>
+    <header><h1 class="Titulo">🔥 Tipo Fogo 🔥</h1></header>
+    <a href="../Arthur/index.html" class="Voltar">Voltar</a>
+    
+    <div id="app">
+        <div class="loading" id="loading">🔥</div>
+        <div class="pokemon-container" id="pokemonContainer"></div>
+    </div>
 
-  <script>
-    // Função para buscar os primeiros 20 Pokémons do tipo fogo
-    fetch('https://pokeapi.co/api/v2/type/fire/')
-      .then(response => response.json())
-      .then(data => {
-        const pokemonsFire = data.pokemon.slice(0, 20);
-        const pokemonList = document.getElementById('pokemon-list');
-
-        pokemonsFire.forEach(pokemon => {
-          fetch(pokemon.pokemon.url)
-            .then(response => response.json())
-            .then(pokemonData => {
-              const listItem = document.createElement('li');
-
-              const pokemonName = pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
-              const pokemonImage = pokemonData.sprites.front_default;
-              const pokemonWeight = pokemonData.weight / 10;
-              const pokemonHeight = pokemonData.height / 10;
-
-              listItem.innerHTML = `
-                <img src="${pokemonImage}" alt="${pokemonName}" />
-                <div class="pokemon-details">
-                  <strong>${pokemonName}</strong>
-                  <span>Peso: ${pokemonWeight} kg</span>
-                  <span>Altura: ${pokemonHeight} m</span>
-                </div>
-              `;
-
-              pokemonList.appendChild(listItem);
-            })
-            .catch(error => console.error('Erro ao buscar os detalhes do Pokémon:', error));
-        });
-      })
-      .catch(error => {
-        console.error('Erro ao buscar os Pokémons:', error);
-      });
-  </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
