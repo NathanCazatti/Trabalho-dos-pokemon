@@ -6,8 +6,20 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+.Titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background: linear-gradient(rgb(200, 17, 148), rgb(230, 117, 250));
+  width: 300px;
+  height: 70px;
+  margin: auto;
+  border-radius: 30px;
+}
+
 .Voltar {
-  background: linear-gradient(rgb(247, 60, 247), rgb(211, 160, 255));
+  background: linear-gradient(rgb(200, 17, 148), rgb(230, 117, 250));
   color: white; 
   padding: 15px;
   border-radius: 25px; 

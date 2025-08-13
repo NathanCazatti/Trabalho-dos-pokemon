@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('pokemonContainer');
   
   try {
-      const ghostTypeResponse = await fetch('https://pokeapi.co/api/v2/type/6/');
+      const ghostTypeResponse = await fetch('https://pokeapi.co/api/v2/type/13/');
       const ghostTypeData = await ghostTypeResponse.json();
       
-      const ghostPokemon = ghostTypeData.pokemon.slice(0, 92);
+      const ghostPokemon = ghostTypeData.pokemon.slice(0, 106);
       
       loadingElement.textContent = `Carregando ${ghostPokemon.length} pokemon `;
       
@@ -63,4 +63,3 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.error('Error fetching Pokemon data:', error);
   }
 });
-
