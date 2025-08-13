@@ -4,149 +4,92 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Página Principal Pokémon - Tipos</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
-  body {
-    margin: 0;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d0000 100%);
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding: 40px 20px;
-  }
-
-  header {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 60px;
-    text-shadow: 0 0 10px #ff4500;
-    letter-spacing: 5px;
-    user-select: none;
-  }
-
-  .buttons-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
-    max-width: 900px;
-    justify-content: center;
-  }
-
-  .btn-type {
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 25px 45px;
-    min-width: 220px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    box-shadow: 0 0 15px #000;
-    user-select: name;
-    border: 4px solid transparent;
-    transition: all 0.3s ease;
-    color: white;
-    text-decoration: none;
-  }
-
-  .btn-type:hover {
-    filter: brightness(1.1);
-    transform: scale(1.07);
-  }
-
-  .btn-type span.icon {
-    font-size: 2.5rem;
-    filter: drop-shadow(0 0 3px #000);
-  }
-
-  .fire {
-    background: linear-gradient(45deg, #ff4500, #a32900);
-    border-color: #ff6b33;
-    box-shadow: 0 0 20px #ff4500;
-  }
-  .fire:hover {
-    box-shadow: 0 0 35px #ff7f50;
-  }
-
-  .ghost {
-    background: linear-gradient(45deg, #5555aa, #1a1a4d);
-    border-color: #8888dd;
-    box-shadow: 0 0 20px #6666ff;
-  }
-  .ghost:hover {
-    box-shadow: 0 0 35px #9999ff;
-  }
-
-  .water {
-    background: linear-gradient(45deg, #0099ff, #004466);
-    border-color: #33ccff;
-    box-shadow: 0 0 20px #00bfff;
-  }
-  .water:hover {
-    box-shadow: 0 0 35px #66d9ff;
-  }
-
-  .grass {
-    background: linear-gradient(45deg, #4caf50, #1b5e20);
-    border-color: #81c784;
-    box-shadow: 0 0 20px #66bb6a;
-  }
-  .grass:hover {
-    box-shadow: 0 0 35px #a5d6a7;
-  }
-
-  footer {
-    margin-top: auto;
-    color: #ff9999;
-    font-size: 0.85rem;
-    padding: 20px 0 10px 0;
-    user-select: none;
-    text-align: center;
-  }
-
-  @media(max-width: 600px) {
-    .btn-type {
-      min-width: 100%;
-      justify-content: center;
-      font-size: 1.15rem;
-    }
-  }
-</style>
-</head>
+<link rel="stylesheet" href="styles.css">
 <body>
-
-<header> pokémons </header>
-
-<div class="buttons-container">
-   <a href="pokemon_fogo.html" class="btn-type fire">
-    <span class="icon">🔥</span>
-    Pokémons de Fogo
-  </a>
-
-  <a href="pokemon_fantasma.html" class="btn-type ghost">
-    <span class="icon">👻</span>
-    Pokémons do Tipo Fantasma
-  </a>
-
-  <a href="pokemon_agua.html" class="btn-type water">
-    <span class="icon">⚡</span>
-    Pokémons relâmpago
-  </a>
-
-  <a href="pokemon_planta.html" class="btn-type grass">
-    <span class="icon">🌿</span>
-    Pokémons de Planta
-  </a>
-</div>
-
-<footer>
+  <nav class="navbar-initial">
+    <div class="nav-titulo">
+     <img src="./assets/titulo-pokemon.png" alt="titulo" class="titulo">
+    </div>
+    <div class="navlinks">
+     <a href="../Davi/index.html" class="navlink">Fogo</a>
+     <a href="../Eduardo/index.html" class="navlink">Planta</a>
+     <a href="../Jeferson/index.html" class="navlink">Elétrico</a>
+     <a href="../JoaoVitor/index.html" class="navlink">Dragão</a>
+     <a href="../Nathan/index.html" class="navlink">Fantasma</a>
+    </div>
+  </nav>
+  <section class="history">
+    <div class="historycontainer">
+      <div class="historyimg">
+        <img src="./assets/BXaygYm.png" alt="">
+      </div>
+      <div class="historytext">
+        <h1>História</h1>
+        <p>Pokémon é uma franquia criada pela Nintendo, Game Freak e Creatures Inc., lançada em 1996 no Japão. Seu conceito central é capturar, treinar e batalhar com criaturas chamadas “Pokémon”, cada uma com habilidades, tipos e evoluções próprias. O universo da série se expande por jogos de videogame, animes, filmes, mangás e cartas colecionáveis, tornando-se um fenômeno cultural mundial. Nos jogos, o objetivo geralmente é explorar regiões, desafiar líderes de ginásio, derrotar a Elite dos Quatro e completar a Pokédex — um registro de todas as espécies conhecidas. Com mais de mil Pokémon catalogados, a franquia continua conquistando fãs de todas as idades.</p>
+      </div>
+    </div>
+  </section>
   
-</footer>
+  
+  
+  
+  <section class="types">
+
+    <div class="historycontainer">
+      <div class="historytext-fire">
+        <h1>Fogo</h1>
+        <p>Pokémon de fogo são criaturas conhecidas por ataques baseados em calor e chamas, geralmente associados a grande poder ofensivo. Eles têm vantagem contra Pokémon do tipo Grama, Inseto, Gelo e Aço, mas são vulneráveis a Água, Rocha e Terra. Muitas vezes possuem designs inspirados em animais velozes ou símbolos de energia, como leões, lagartos e aves. Exemplos famosos incluem Charmander, Charizard, Vulpix, Arcanine, Cyndaquil, Torchic, Infernape e Fuecoco. Além de ataques como Flamethrower e Fire Blast, muitos evoluem para formas ainda mais poderosas, tornando-se destaque em batalhas.</p>
+        <a href="../Davi/index.html">VER</a>
+      </div>
+      <div class="historyimg-fire">
+        <img src="./assets/vqJbjC6.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="historycontainer">
+      <div class="historyimg-plant">
+        <img src="./assets/faecae4e2de3661797222e69c3b09d4566fba547_hq.jpg" alt="">
+      </div>
+      <div class="historytext">
+        <h1>Planta</h1>
+        <p>Pokémon do tipo Planta são conhecidos por suas habilidades ligadas à natureza, como controlar plantas, flores e esporos. Eles têm vantagem contra tipos Água, Rocha e Terra, mas são vulneráveis a Fogo, Gelo, Voador, Inseto e Veneno. Costumam ter aparência inspirada em árvores, flores, frutos ou criaturas da floresta. Entre os mais famosos estão Bulbasaur, Venusaur, Chikorita, Sceptile, Roserade e Rillaboom. Seus ataques incluem golpes como Razor Leaf, Solar Beam e Leech Seed, que combinam dano com efeitos estratégicos como recuperação de energia ou enfraquecimento do oponente.</p>
+        <a href="../Eduardo/index.html">VER</a>
+      </div>
+    </div>
+
+    <div class="historycontainer">
+      <div class="historytext">
+        <h1>Elétrico</h1>
+        <p>Pokémon do tipo Elétrico são mestres da eletricidade e dos raios, conhecidos por sua velocidade e capacidade de paralisar adversários. Eles têm vantagem contra o tipo Água e Voador, mas são pouco eficazes contra o tipo Terra, que é sua maior fraqueza. Geralmente inspirados em animais ágeis, como roedores, felinos e aves, são símbolos de energia e dinamismo. Entre os mais famosos estão Pikachu, Raichu, Jolteon, Ampharos, Luxray e Zeraora. Seus ataques incluem técnicas como Thunderbolt, Volt Tackle e Thunder Wave, capazes de causar grande dano ou reduzir a mobilidade do inimigo.</p>
+        <a href="../Jeferson/index.html">VER</a>
+      </div>
+      <div class="historyimg">
+        <img src="./assets/novo-template-CDVG-43.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="historycontainer">
+      <div class="historyimg">
+        <img src="./assets/_image.webp" alt="">
+      </div>
+      <div class="historytext">
+        <h1>Dragão</h1>
+        <p>Pokémon do tipo Dragão são conhecidos por sua força impressionante e resistência, sendo considerados entre os mais poderosos do universo Pokémon. Inspirados em criaturas lendárias e mitológicas, eles costumam ter aparência majestosa e habilidades versáteis. Possuem vantagem contra outros tipos Dragão e, em algumas gerações, contra Pokémon específicos dependendo das combinações de tipos, mas são vulneráveis a Gelo, Fada e Dragão. Entre os mais icônicos estão Dragonite, Salamence, Garchomp, Rayquaza, Haxorus e Dragapult. Seus ataques, como Dragon Claw, Draco Meteor e Outrage, podem causar danos massivos, tornando-os temidos em batalhas competitivas.</p>
+        <a href="../JoaoVitor/index.html">VER</a>
+      </div>
+    </div>
+    <div class="historycontainer">
+      <div class="historytext">
+        <h1>Fantasma</h1>
+        <p>Pokémon do tipo Fantasma são criaturas misteriosas e etéreas, associadas ao sobrenatural, espíritos e fenômenos paranormais. Eles têm vantagem sobre os tipos Psíquico e Fantasma, e são imunes a ataques do tipo Normal e Lutador, mas vulneráveis a ataques do tipo Fantasma e Sombrio. Costumam ter aparências assustadoras ou enigmáticas, como fantasmas, espectros e entidades sombrias. Exemplos famosos incluem Gengar, Gastly, Mismagius, Chandelure e Dragapult. Seus ataques, como Shadow Ball e Hex, combinam dano com efeitos especiais, sendo bastante estratégicos em batalhas.</p>
+        <a href="../Nathan/index.html">VER</a>
+      </div>
+      <div class="historyimg">
+        <img src="./assets/pokemon-ghost-type.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
 
 </body>
 </html>
