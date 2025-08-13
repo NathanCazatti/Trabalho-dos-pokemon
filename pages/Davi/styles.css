@@ -1,84 +1,102 @@
-/* Fundo com insígnia de fogo atrás, suave e fixa */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 10px;
-  color: #bf360c;
-  position: relative;
+  padding: 25px;
   min-height: 100vh;
-  background-color: #fff5f0;
+  background: linear-gradient(to right, rgb(139, 0, 0), rgb(255, 69, 0));
+  font-family: "Times New Roman", Times, serif;
 }
 
-/* Pseudo-elemento para colocar a insígnia de fogo com transparência */
-body::before {
-  content: "";
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 250px;
-  height: 250px;
-  background: url('https://i.imgur.com/xUdNRrZ.png') no-repeat center center;
-  background-size: contain;
-  opacity: 0.1;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Título principal */
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
-  font-weight: bold;
-  font-size: 1.8rem;
-}
-
-/* Lista sem estilo padrão, centralizada e responsiva */
-#pokemonList {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 400px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Cartão do Pokémon - um abaixo do outro */
-.pokemon-card {
-  background: #ffccbc;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  padding: 15px;
-  margin-bottom: 12px;
+.Titulo {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
-  transition: transform 0.2s;
+  color: whitesmoke;
+  background: linear-gradient(rgb(255, 87, 34), rgb(255, 140, 0));
+  width: 300px;
+  height: 70px;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.7);
+}
+
+.Voltar {
+  background: linear-gradient(rgb(255, 87, 34), rgb(255, 140, 0));
+  color: white; 
+  padding: 15px;
+  border-radius: 25px; 
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
+}
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pokemon-card {
+  background: linear-gradient(to bottom right, rgb(255, 69, 0), rgb(255, 165, 0));
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-top: 5px solid rgb(255, 140, 0);
 }
 
 .pokemon-card:hover {
   transform: scale(1.05);
-  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(255, 87, 34, 0.7);
 }
 
-/* Imagem do Pokémon */
-.pokemon-card img {
-  width: 96px;
-  height: 96px;
+.pokemon-image {
+  background: linear-gradient(to bottom right, rgb(255, 94, 0), rgb(255, 165, 0));
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  min-height: 120px;
 }
 
-/* Nome do Pokémon */
+.pokemon-image img {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
 .pokemon-name {
+  font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 10px;
   text-transform: capitalize;
-  color: #bf360c;
-  font-size: 1.2rem;
+  color: #fff5e1;
 }
 
-/* Tipos do Pokémon */
-.pokemon-types {
-  font-size: 0.9rem;
-  color: #6d4c41;
+.pokemon-details p {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
 }
+
+.fire-badge {
+  color: rgb(255, 230, 200);
+  background: linear-gradient(to right, rgb(255, 87, 34), rgb(255, 140, 0));
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 0 5px rgba(255, 87, 34, 0.6);
+}
+
+@media (max-width: 480px) {
+  .pokemon-container {
+      grid-template-columns: 1fr;
+  }
+}
+
