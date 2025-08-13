@@ -1,53 +1,66 @@
-async function fetchFirePokemons() {
-  const listEl = document.getElementById('pokemonList');
-  listEl.innerHTML = 'Carregando...';
-
+document.addEventListener('DOMContentLoaded', async () => {
+  const loadingElement = document.getElementById('loading');
+  const container = document.getElementById('pokemonContainer');
+  
   try {
-    const response = await fetch('https://pokeapi.co/api/v2/type/fire');
-    const data = await response.json();
-
-    const pokemons = data.pokemon.slice(0, 20); // só 20 pra não pesar
-
-    listEl.innerHTML = '';
-
-    // Cria as duas colunas
-    const col1 = document.createElement('div');
-    const col2 = document.createElement('div');
-    col1.className = 'pokemon-column';
-    col2.className = 'pokemon-column';
-
-    const half = Math.ceil(pokemons.length / 2);
-
-    for (let i = 0; i < pokemons.length; i++) {
-      const p = pokemons[i];
-      const pokeResponse = await fetch(p.pokemon.url);
-      const pokeData = await pokeResponse.json();
-
-      const card = document.createElement('div');
-      card.className = 'pokemon-card';
-
-      const types = pokeData.types.map(t => t.type.name).join(', ');
-
-      card.innerHTML = `
-        <img src="${pokeData.sprites.front_default}" alt="${pokeData.name}" />
-        <div class="pokemon-name">${pokeData.name}</div>
-        <div class="pokemon-types">${types}</div>
-      `;
-
-      if (i < half) {
-        col1.appendChild(card);
-      } else {
-        col2.appendChild(card);
+      // Tipo Fogo é 10
+      const fireTypeResponse = await fetch('https://pokeapi.co/api/v2/type/10/');
+      const fireTypeData = await fireTypeResponse.json();
+      
+      const firePokemon = fireTypeData.pokemon.slice(0, 92);
+      
+      loadingElement.textContent = `🔥 Carregando ${firePokemon.length} Pokémon de fogo... 🔥`;
+      
+      const pokemonDetails = [];
+      
+      for (const pokemon of firePokemon) {
+          const response = await fetch(pokemon.pokemon.url);
+          const data = await response.json();
+          pokemonDetails.push(data);
       }
-    }
-
-    listEl.appendChild(col1);
-    listEl.appendChild(col2);
-
+      
+      loadingElement.style.display = 'none';
+      
+      pokemonDetails.forEach(pokemon => {
+          const card = document.createElement('div');
+          card.className = 'pokemon-card';
+          
+          card.innerHTML = `
+              <div class="pokemon-image">
+                  <img src="https://placehold.co/120x120" alt="Official artwork of ${pokemon.name}" />
+              </div>
+              <h2 class="pokemon-name">${pokemon.name.replace(/-/g, ' ')}</h2>
+              <div class="pokemon-details">
+                  <p><span>Pokedex #:</span> <span>${pokemon.id}</span></p>
+                  <p><span>Height:</span> <span>${pokemon.height / 10}m</span></p>
+                  <p><span>Weight:</span> <span>${pokemon.weight / 10}kg</span></p>
+                  <p><span>Types:</span> <span>
+                      ${pokemon.types.map(type => 
+                          `<span class="fire-badge">${type.type.name}</span>`
+                      ).join(' ')}
+                  </span></p>
+                  <p><span>Abilities:</span> <span>
+                      ${pokemon.abilities
+                          .filter(a => !a.is_hidden)
+                          .map(a => a.ability.name.replace(/-/g, ' '))
+                          .join(', ')}
+                  </span></p>
+              </div>
+          `;
+          
+          const img = card.querySelector('img');
+          const officialArt = pokemon.sprites.other['official-artwork'].front_default;
+          if (officialArt) {
+              img.onload = () => img.style.opacity = 1;
+              img.src = officialArt;
+              img.alt = `Official artwork of ${pokemon.name}`;
+          }
+          
+          container.appendChild(card);
+      });
+      
   } catch (error) {
-    listEl.innerHTML = 'Erro ao carregar os Pokémons.';
-    console.error(error);
+      loadingElement.textContent = '🔥 Falha ao acender a chama! Tente novamente mais tarde.';
+      console.error('Error fetching Pokemon data:', error);
   }
-}
-
-fetchFirePokemons();
+});
