@@ -1,12 +1,13 @@
+
 document.addEventListener('DOMContentLoaded', async () => {
     const loadingElement = document.getElementById('loading');
     const container = document.getElementById('pokemonContainer');
     
     try {
-        const ghostTypeResponse = await fetch('https://pokeapi.co/api/v2/type/10/');
+        const ghostTypeResponse = await fetch('https://pokeapi.co/api/v2/type/3/');
         const ghostTypeData = await ghostTypeResponse.json();
         
-        const ghostPokemon = ghostTypeData.pokemon.slice(0, 1300);
+        const ghostPokemon = ghostTypeData.pokemon.slice(0, 149);
         
         loadingElement.textContent = `Carregando ${ghostPokemon.length} pokemon `;
         
