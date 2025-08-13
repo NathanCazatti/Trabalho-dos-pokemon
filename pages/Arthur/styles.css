@@ -5,7 +5,7 @@
 }
 body{
   font-family: "Montserrat", sans-serif;
-  background-color: #F7F6F2;
+  background-color: #9c9c9c;
 }
 .navbar-initial{
   width: 100%;
@@ -47,14 +47,13 @@ body{
   background-color: #5f5f5f; 
 }
 .historycontainer{
-  margin-top: 2px;
+  margin-top: 40px;
   display: flex;
   height: 400px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(187, 179, 179);
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  
 }
 .historyimg{
   height: 90%;
@@ -84,6 +83,7 @@ body{
   margin-top: 40px;
 }
 
+/*FOGO*/
 .historytext-fire{
   height: 90%;
   width: 59%;
@@ -97,8 +97,19 @@ body{
   background-color: orangered;
   text-decoration: none;
   color: black;
-  border-radius: 20px;
-  width: 45px;
+  border-radius: 30px;
+  width: 175px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  margin-top: 50px;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+.historytext-fire a:hover{
+  transform: scale(1.15); 
+  background-color: #ff0000;
 }
 .historyimg-fire{
   height: 90%;
@@ -115,6 +126,9 @@ body{
   height: 90%;
   border-radius: 20px;
 }
+
+
+/*PLANTA*/
 .historyimg-plant{
   height: 90%;
   width: 40%;
@@ -129,4 +143,31 @@ body{
   width: 90%;
   height: 90%;
   border-radius: 20px;
+}
+.historytext-plant{
+  height: 90%;
+  width: 59%;
+  background-color: #b1b1b1;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 20px;
+}
+.historytext-plant a{
+  background-color: rgb(33, 165, 0);
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  width: 175px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  margin-top: 50px;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+.historytext-plant a:hover{
+  transform: scale(1.15); 
+  background-color: #5acf00;
 }

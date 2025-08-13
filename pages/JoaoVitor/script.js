@@ -1,32 +1,67 @@
-
-  document.addEventListener('DOMContentLoaded', () => {
-  const divs = document.querySelectorAll('.campos .caracteristicas');
+document.addEventListener('DOMContentLoaded', async () => {
+  const loadingElement = document.getElementById('loading');
+  const container = document.getElementById('pokemonContainer');
   
-  // Função para criar o conteúdo HTML do Pokémon
-  function criarConteudoPokemon(data) {
-    return `
-      <h3>${data.name.toUpperCase()} (ID: ${data.id})</h3>
-      <img src="${data.sprites.front_default}" alt="${data.name}" />
-      <p><strong>Tipo(s):</strong> ${data.types.map(t => t.type.name).join(', ')}</p>
-      <p><strong>Altura:</strong> ${data.height / 10} m</p>
-      <p><strong>Peso:</strong> ${data.weight / 10} kg</p>
-      <p><strong>Habilidades:</strong> ${data.abilities.map(a => a.ability.name).join(', ')}</p>
-      <p><strong>Experiência Base:</strong> ${data.base_experience}</p>
-    `;
-  }
-
-  // Buscar e preencher cada div com um Pokémon diferente
-  divs.forEach((div, index) => {
-    const pokemonId = index + 1; // IDs 1 a 9
-
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
-      .then(response => response.json())
-      .then(data => {
-        div.innerHTML = criarConteudoPokemon(data);
-      })
-      .catch(err => {
-        div.textContent = 'Erro ao carregar Pokémon';
-        console.error(err);
+  try {
+      // Mudado para o tipo Dragon (ID 16)
+      const dragonTypeResponse = await fetch('https://pokeapi.co/api/v2/type/16/');
+      const dragonTypeData = await dragonTypeResponse.json();
+      
+      // Seleciona até 92 Pokémons do tipo Dragon
+      const dragonPokemon = dragonTypeData.pokemon.slice(0, 92);
+      
+      loadingElement.textContent = `Carregando ${dragonPokemon.length} pokémons do tipo Dragon...`;
+      
+      const pokemonDetails = [];
+      
+      for (const pokemon of dragonPokemon) {
+          const response = await fetch(pokemon.pokemon.url);
+          const data = await response.json();
+          pokemonDetails.push(data);
+      }
+      
+      loadingElement.style.display = 'none';
+      
+      pokemonDetails.forEach(pokemon => {
+          const card = document.createElement('div');
+          card.className = 'pokemon-card';
+          
+          card.innerHTML = `
+              <div class="pokemon-image">
+                  <img src="https://placehold.co/120x120" alt="Official artwork of ${pokemon.name}" />
+              </div>
+              <h2 class="pokemon-name">${pokemon.name.replace(/-/g, ' ')}</h2>
+              <div class="pokemon-details">
+                  <p><span>Pokedex #:</span> <span>${pokemon.id}</span></p>
+                  <p><span>Height:</span> <span>${pokemon.height / 10}m</span></p>
+                  <p><span>Weight:</span> <span>${pokemon.weight / 10}kg</span></p>
+                  <p><span>Types:</span> <span>
+                      ${pokemon.types.map(type => 
+                          `<span class="ghost-badge">${type.type.name}</span>`
+                      ).join(' ')}
+                  </span></p>
+                  <p><span>Abilities:</span> <span>
+                      ${pokemon.abilities
+                          .filter(a => !a.is_hidden)
+                          .map(a => a.ability.name.replace(/-/g, ' '))
+                          .join(', ')}
+                  </span></p>
+              </div>
+          `;
+          
+          const img = card.querySelector('img');
+          const officialArt = pokemon.sprites.other['official-artwork'].front_default;
+          if (officialArt) {
+              img.onload = () => img.style.opacity = 1;
+              img.src = officialArt;
+              img.alt = `Official artwork of ${pokemon.name}`;
+          }
+          
+          container.appendChild(card);
       });
-  });
+      
+  } catch (error) {
+      loadingElement.textContent = 'Falha ao carregar os Pokémons do tipo Dragon. Tente novamente mais tarde!';
+      console.error('Erro ao buscar dados dos Pokémons:', error);
+  }
 });
