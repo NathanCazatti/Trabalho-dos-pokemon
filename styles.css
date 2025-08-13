@@ -1,0 +1,9 @@
+.modal {
+    transition: opacity 0.2s ease;
+}
+
+.type-badge {
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}

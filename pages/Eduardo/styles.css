@@ -6,8 +6,22 @@ body {
   font-family: sans-serif;
 }
 
+.Voltar {
+  background: linear-gradient(#1ccc19, #21790c); /* amarelo vibrante para laranja */
+  color: white; 
+  padding: 15px;
+  border-radius: 5px; 
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: auto;
+}
+
+
 .Titulo {
-  background-color: rgb(212, 233, 199);
+  background-color: rgb(166, 211, 138);
   width: 400px;
   padding: 10px;
   border-radius: 25px;
@@ -23,10 +37,10 @@ body {
   }
   
   .pokemon-card {
-    background: linear-gradient(to bottom right, rgb(94, 189, 95), rgb(70, 193, 18));
+    background: linear-gradient(to bottom right, rgb(49, 184, 78), rgb(70, 193, 18));
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(66, 194, 20, 0.1);
     transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -35,7 +49,7 @@ body {
   
 
   .pokemon-image {
-    background: linear-gradient(to bottom right, rgb(184, 2, 184), rgb(255, 121, 255));
+    background: linear-gradient(to bottom right, rgb(46, 204, 22), rgb(121, 255, 170));
     border-radius: 8px;
     display: flex;
     justify-content: center;
