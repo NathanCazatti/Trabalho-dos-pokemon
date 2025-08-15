@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(20, 20, 20), rgb(60, 60, 60));
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .Titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: linear-gradient(rgb(255, 230, 0), rgb(255, 200, 0));
+    width: 300px;
+    height: 70px;
+    margin: auto;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+  
+  .Voltar {
+    background: linear-gradient(rgb(255, 230, 0), rgb(255, 200, 0));
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  .pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .pokemon-card {
+    background: linear-gradient(to bottom right, rgb(255, 220, 0), rgb(255, 180, 0));
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(255, 230, 0, 0.6);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid rgb(255, 255, 0);
+  }
+  
+  .pokemon-image {
+    background: linear-gradient(to bottom right, rgb(255, 240, 0), rgb(255, 200, 0));
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    min-height: 120px;
+  }
+  
+  .pokemon-image img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .pokemon-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: black;
+  }
+  
+  .pokemon-details p {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+  }
+  
+  .ghost-badge {
+    color: rgb(60, 60, 60);
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    .pokemon-container {
+        grid-template-columns: 1fr;
+    }
+  }
+  
