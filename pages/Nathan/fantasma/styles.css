@@ -2,25 +2,26 @@ body {
   margin: 0;
   padding: 25px;
   min-height: 100vh;
-  background: linear-gradient(to right, rgb(60, 0, 60), rgb(108, 2, 101));
+  background: linear-gradient(to bottom right, #400060, #A94CC8);
   font-family: "Times New Roman", Times, serif;
 }
 
 .Titulo {
   display: flex;
+  color: white;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
-  background: linear-gradient(rgb(200, 17, 148), rgb(230, 117, 250));
+  background: linear-gradient(#1A0026, #400060);
   width: 300px;
   height: 70px;
   margin: auto;
   border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(44, 0, 65, 0.2);
 }
 
 .Voltar {
-  background: linear-gradient(rgb(200, 17, 148), rgb(230, 117, 250));
-  color: white; 
+  background: linear-gradient(#1A0026, #400060);
+  color: white;
   padding: 15px;
   border-radius: 25px; 
   text-decoration: none;
@@ -28,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 150px;
+  box-shadow: 0 4px 10px rgba(44, 0, 65, 0.2);
 }
 
   .pokemon-container {
@@ -38,19 +40,19 @@ body {
   }
   
   .pokemon-card {
-    background: linear-gradient(to bottom right, purple, rgb(236, 73, 236));
+    background: linear-gradient(to bottom right, #1A0026, #400060);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
-    border-top: 5px solid var(--ghost-purple);
+    border-top: 5px solid #232423
   }
   
 
   .pokemon-image {
-    background: linear-gradient(to bottom right, rgb(184, 2, 184), rgb(255, 121, 255));
+    background: linear-gradient(to top right, #400060, #A94CC8);
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -78,7 +80,7 @@ body {
   }
   
   .ghost-badge {
-    color: rgb(144, 0, 74);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
   }
   
