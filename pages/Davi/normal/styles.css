@@ -1,22 +1,33 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 25px;
     min-height: 100vh;
-    background: linear-gradient(to right, #cceeff, #99ccff);
+    background: linear-gradient(to right, rgb(245, 245, 245), rgb(222, 212, 202));
     font-family: "Times New Roman", Times, serif;
   }
   
+  .Titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 30, 20);
+    background: linear-gradient(rgb(210, 200, 190), rgb(245, 245, 245));
+    width: 300px;
+    height: 70px;
+    margin: auto;
+    border-radius: 30px;
+  }
+  
   .Voltar {
-    background: linear-gradient(#87ceeb, #add8e6);
-    color: white;
+    background: linear-gradient(rgb(210, 200, 190), rgb(245, 245, 245));
+    color: rgb(51, 30, 20); 
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 25px; 
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    margin: auto;
+    width: 150px;
   }
   
   .pokemon-container {
@@ -27,18 +38,18 @@ body {
   }
   
   .pokemon-card {
-    background: linear-gradient(to bottom right, #e0f7ff, #b0e0e6);
+    background: linear-gradient(to bottom right, rgb(230, 220, 210), rgb(250, 245, 240));
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(135, 206, 250, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
-    border-top: 5px solid #87cefa;
+    border-top: 5px solid rgb(200, 190, 180);
   }
   
   .pokemon-image {
-    background: linear-gradient(to bottom right, #d0f0ff, #f0ffff);
+    background: linear-gradient(to bottom right, rgb(245, 245, 245), rgb(230, 220, 210));
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -58,23 +69,23 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: capitalize;
-    color: #4682b4;
+    color: rgb(51, 30, 20);
   }
   
   .pokemon-details p {
     display: flex;
     justify-content: space-between;
-    color: #5f9ea0;
+    color: rgb(51, 30, 20);
   }
   
   .ghost-badge {
-    color: #87ceeb;
+    color: rgb(150, 130, 110);
     font-size: 1rem;
   }
   
   @media (max-width: 480px) {
     .pokemon-container {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
   }
   

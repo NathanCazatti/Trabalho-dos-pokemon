@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 25px;
     min-height: 100vh;
-    background: linear-gradient(to right, rgb(10, 70, 20), rgb(25, 120, 50));
+    background: linear-gradient(to right, rgb(189, 183, 107), rgb(205, 133, 63));
     font-family: "Times New Roman", Times, serif;
   }
   
@@ -10,8 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    background: linear-gradient(rgb(34, 139, 34), rgb(144, 238, 144));
+    color: rgb(60, 40, 20);
+    background: linear-gradient(rgb(210, 180, 140), rgb(160, 82, 45));
     width: 300px;
     height: 70px;
     margin: auto;
@@ -19,8 +19,8 @@ body {
   }
   
   .Voltar {
-    background: linear-gradient(rgb(34, 139, 34), rgb(144, 238, 144));
-    color: white; 
+    background: linear-gradient(rgb(210, 180, 140), rgb(160, 82, 45));
+    color: rgb(60, 40, 20); 
     padding: 15px;
     border-radius: 25px; 
     text-decoration: none;
@@ -38,18 +38,18 @@ body {
   }
   
   .pokemon-card {
-    background: linear-gradient(to bottom right, rgb(46, 139, 87), rgb(60, 179, 113));
+    background: linear-gradient(to bottom right, rgb(222, 184, 135), rgb(210, 180, 140));
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
-    border-top: 5px solid rgb(0, 100, 0);
+    border-top: 5px solid rgb(139, 69, 19);
   }
   
   .pokemon-image {
-    background: linear-gradient(to bottom right, rgb(34, 139, 34), rgb(124, 252, 0));
+    background: linear-gradient(to bottom right, rgb(245, 222, 179), rgb(210, 180, 140));
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -69,15 +69,17 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: capitalize;
+    color: rgb(60, 40, 20);
   }
   
   .pokemon-details p {
     display: flex;
     justify-content: space-between;
+    color: rgb(60, 40, 20);
   }
   
   .ghost-badge {
-    color: rgb(0, 100, 0);
+    color: rgb(139, 69, 19);
     font-size: 1rem;
   }
   
