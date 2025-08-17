@@ -66,14 +66,14 @@ body {
 .historytext-fire {
   height: 90%;
   width: 59%;
-  background: linear-gradient(to bottom right, #ff6347, #ffcc00);
+  background: linear-gradient(to bottom right, #f08030, #f8d030);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-fire a {
-  background-color: orangered;
+  background-color: #f08030;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -88,12 +88,12 @@ body {
 }
 .historytext-fire a:hover {
   transform: scale(1.15);
-  background-color: #ff0000;
+  background-color: #c04a00;
 }
 .historyimg-fire {
   height: 90%;
   width: 40%;
-  background: linear-gradient(to bottom right, #ff6347, #ffcc00);
+  background: linear-gradient(to bottom right, #f08030, #f8d030);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -108,7 +108,7 @@ body {
 .historyimg-plant {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #78c850, #a8e070);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -123,14 +123,14 @@ body {
 .historytext-plant {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #78c850, #a8e070);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-plant a {
-  background-color: rgb(33, 165, 0);
+  background-color: #78c850;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -150,14 +150,14 @@ body {
 .historytext-eletric {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #f8d030, #f8f878);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-eletric a {
-  background-color: rgb(238, 255, 0);
+  background-color: #f8d030;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -172,12 +172,12 @@ body {
 }
 .historytext-eletric a:hover {
   transform: scale(1.15);
-  background-color: #ffd902;
+  background-color: #fad400;
 }
 .historyimg-eletric {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background-color: #f8d030;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -192,7 +192,7 @@ body {
 .historyimg-dragon {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #7038f8, #a890f0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -207,14 +207,14 @@ body {
 .historytext-dragon {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #7038f8, #a890f0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-dragon a {
-  background-color: rgb(175, 158, 0);
+  background-color: #7038f8;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -229,19 +229,19 @@ body {
 }
 .historytext-dragon a:hover {
   transform: scale(1.15);
-  background-color: #cffd00;
+  background-color: #5029B8;
 }
 .historytext-fantasm {
   height: 90%;
   width: 59%;
-  background: linear-gradient(to bottom right, purple, rgb(236, 73, 236));;
+  background: linear-gradient(to bottom right, #705898, #a890f0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-fantasm a {
-  background: linear-gradient(to bottom right, purple, rgb(236, 73, 236));
+  background: linear-gradient(to bottom right, #705898, #a890f0);
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -261,7 +261,7 @@ body {
 .historyimg-fantasm {
   height: 90%;
   width: 40%;
-  background: linear-gradient(to bottom right, purple, rgb(236, 73, 236));
+  background: linear-gradient(to bottom right, #705898, #a890f0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -276,14 +276,14 @@ body {
 .historytext-water {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #6890f0, #98d8d8);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-water a {
-  background-color: #1e90ff;
+  background-color: #6890f0;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -302,7 +302,7 @@ body {
 .historyimg-water {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #6890f0, #98d8d8);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -317,14 +317,14 @@ body {
 .historytext-ice {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #98d8d8, #bce6e6);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-ice a {
-  background-color: #87cefa;
+  background-color: #98d8d8;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -343,7 +343,7 @@ body {
 .historyimg-ice {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #98d8d8, #bce6e6);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -358,14 +358,14 @@ body {
 .historytext-rock {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #b8a038, #d1c17d);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-rock a {
-  background-color: #a0522d;
+  background-color: #b8a038;
   text-decoration: none;
   color: white;
   border-radius: 30px;
@@ -384,7 +384,7 @@ body {
 .historyimg-rock {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #b8a038, #d1c17d);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -399,14 +399,14 @@ body {
 .historytext-ground {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #e0c068, #f0e6b2);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-ground a {
-  background-color: #d2b48c;
+  background-color: #e0c068;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -425,7 +425,7 @@ body {
 .historyimg-ground {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #e0c068, #f0e6b2);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -440,14 +440,14 @@ body {
 .historytext-fighting {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #c03028, #e94d36);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-fighting a {
-  background-color: #ff6347;
+  background-color: #c03028;
   text-decoration: none;
   color: white;
   border-radius: 30px;
@@ -466,7 +466,7 @@ body {
 .historyimg-fighting {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #c03028, #e94d36);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -481,14 +481,14 @@ body {
 .historytext-bug {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #a8b820, #9acd32);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-bug a {
-  background-color: #9acd32;
+  background-color: #a8b820;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -507,7 +507,7 @@ body {
 .historyimg-bug {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #a8b820, #9acd32);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -522,14 +522,14 @@ body {
 .historytext-flying {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #a890f0, #c0c0f0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-flying a {
-  background-color: #87ceeb;
+  background-color: #a890f0;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -548,7 +548,7 @@ body {
 .historyimg-flying {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #a890f0, #c0c0f0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -563,14 +563,14 @@ body {
 .historytext-poison {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #a040a0, #d08ad0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-poison a {
-  background-color: #9400d3;
+  background-color: #a040a0;
   text-decoration: none;
   color: white;
   border-radius: 30px;
@@ -589,7 +589,7 @@ body {
 .historyimg-poison {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #a040a0, #d08ad0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -604,14 +604,14 @@ body {
 .historytext-psychic {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #f85888, #ffb6c1);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-psychic a {
-  background-color: #ff69b4;
+  background-color: #f85888;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -630,7 +630,7 @@ body {
 .historyimg-psychic {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #f85888, #ffb6c1);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -645,14 +645,14 @@ body {
 .historytext-dark {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #705848, #a09090);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-dark a {
-  background-color: #2f4f4f;
+  background-color: #705848;
   text-decoration: none;
   color: white;
   border-radius: 30px;
@@ -671,7 +671,7 @@ body {
 .historyimg-dark {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #705848, #a09090);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -686,14 +686,14 @@ body {
 .historytext-steel {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #b8b8d0, #d8d8d8);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-steel a {
-  background-color: #c0c0c0;
+  background-color: #b8b8d0;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -712,7 +712,7 @@ body {
 .historyimg-steel {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #b8b8d0, #d8d8d8);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -727,14 +727,14 @@ body {
 .historytext-normal {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #a8a878, #d8d8d0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-normal a {
-  background-color: #f5deb3;
+  background-color: #a8a878;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -753,7 +753,7 @@ body {
 .historyimg-normal {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #a8a878, #d8d8d0);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -768,14 +768,14 @@ body {
 .historytext-fairy {
   height: 90%;
   width: 59%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #ee99ac, #f4b8c4);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
 }
 .historytext-fairy a {
-  background-color: #ffb6c1;
+  background-color: #ee99ac;
   text-decoration: none;
   color: black;
   border-radius: 30px;
@@ -794,7 +794,7 @@ body {
 .historyimg-fairy {
   height: 90%;
   width: 40%;
-  background-color: #b1b1b1;
+  background: linear-gradient(to bottom right, #ee99ac, #f4b8c4);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
