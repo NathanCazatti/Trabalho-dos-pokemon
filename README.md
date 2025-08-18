@@ -6,7 +6,7 @@ Tecnologias Utilizadas
 PokéAPI
 js, css e html
 
-👥 Contribuições do Grupo
+👥 Contribuições do Grupo / 
  João → Página inicial / 
  Nathan → Estilização CSS, configuração e uso de API e criou 5 páginas / 
  Jeferson → Desenvolvimento de 13 páginas / 
