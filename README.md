@@ -25,10 +25,10 @@ Davi → tentou existir
 <img width="1300" height="641" alt="image" src="https://github.com/user-attachments/assets/1919813d-732f-40d2-aa10-f4f92ada49ea" />
 <img width="1300" height="633" alt="image" src="https://github.com/user-attachments/assets/24254298-d02f-461e-af7a-79895e65944f" />
 <img width="1301" height="638" alt="image" src="https://github.com/user-attachments/assets/b948b577-0fbb-494f-a72f-04dd5d62e281" />
-<img width="1301" height="638" alt="image" src="https://github.com/user-attachments/assets/af84bc0b-6976-4785-b653-1c299057a300" />
 <img width="1303" height="638" alt="image" src="https://github.com/user-attachments/assets/fee2f6dc-9775-4252-9540-a2166c122e7d" />
 <img width="1298" height="635" alt="image" src="https://github.com/user-attachments/assets/84bc63b1-818c-415b-90ac-1ea9adc2fd53" />
 <img width="1296" height="637" alt="image" src="https://github.com/user-attachments/assets/ce3e52b9-b1a6-48e7-82c1-55f8163b8744" />
 <img width="1305" height="639" alt="image" src="https://github.com/user-attachments/assets/dd5da026-830b-4f68-92a0-afa647b966cb" />
 <img width="1296" height="641" alt="image" src="https://github.com/user-attachments/assets/775e7d17-ca75-44db-be80-b4b7799e6c9d" />
 <img width="1297" height="640" alt="image" src="https://github.com/user-attachments/assets/c51636f6-5874-43ec-b2f9-119b43c6efc4" />
+<img width="1899" height="905" alt="image" src="https://github.com/user-attachments/assets/36c771cc-be36-4815-b855-4e1a61daf082" />
