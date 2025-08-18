@@ -7,12 +7,12 @@ PokéAPI
 js, css e html
 
 👥 Contribuições do Grupo
-João → Página inicial/ 
-Nathan → Estilização CSS, configuração e uso de API e criou 5 páginas/ 
-Jeferson → Desenvolvimento de 13 páginas/ 
-Eduardo → Fez a READme/ 
-Arthur → nem existiu/ 
-Davi → tentou existir/ 
+ João → Página inicial / 
+ Nathan → Estilização CSS, configuração e uso de API e criou 5 páginas / 
+ Jeferson → Desenvolvimento de 13 páginas / 
+ Eduardo → Fez a READme / 
+ Arthur → nem existiu / 
+ Davi → tentou existir / 
 <img width="1305" height="641" alt="image" src="https://github.com/user-attachments/assets/0ef3c73a-881b-4753-bf41-98ef0ac20d27" />
 <img width="1301" height="641" alt="image" src="https://github.com/user-attachments/assets/b465b16a-adc6-4cde-bcf0-67b081b25c9c" />
 <img width="1301" height="636" alt="image" src="https://github.com/user-attachments/assets/b114dd38-7f95-481d-9392-7bff66d2aab7" />
